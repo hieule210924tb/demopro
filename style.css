@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.feedback-list{
+    margin-top: 10px;
+    padding: 96px 0;
+    position: relative;
+}
+.feedback-item{
+    display: flex;
+    margin: 40px;
+}
+.feedback-item .show-slide{
+    position: relative;
+    background: #2E2100;
+    width: 20%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.feedback-item .show-sliders{
+    display: flex;
+    transition: transform 1s ease;
+}
+.feedback-item .slide{
+    text-align: center;
+    min-width: 100%;
+}
+.feedback-item .avata{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback-item .member{
+   margin-top: 18px;
+   color: #f7f7f7;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 34px;
+}
+.feedback-item .desc{
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 14px;
+    line-height: 24px;
+}
+.feedback-item .dots{
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    
+}
+.feedback-item .dots .dot{
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #717171;
+    transform: scale(1.5);
+}
